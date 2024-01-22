@@ -6,6 +6,7 @@ mydb=mysql.connector.connect(host='localhost',
 
 )
 cur=mydb.cursor()
-
-query="create table book1(bookid integer(4),name varchar(20),price integer(3))"
-cur.execute(query)
+query="insert into book1 (bookid,name,price) values(%s,%s,%s)"
+b1=(1,'python',23)
+cur.execute(query,b1)
+mydb.commit()
