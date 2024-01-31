@@ -1,0 +1,9 @@
+The steps to be followed while creating the core database creation in python 
+
+1. importing the mysql.coonector --->(import mysql.connect)
+2. creating the object of mysql.connector.connect(user,host,password)---->(mydb=mysql.connector.connect(user,passeword,host))
+3. creating cursor object --> (cur=mydb.Cursor()
+4. writing the sql query ---->query='any sql query'
+4. executing the cursor object ----> cur.execute(query)
+5. commiting back to database object.---> mydb.commit()
+
