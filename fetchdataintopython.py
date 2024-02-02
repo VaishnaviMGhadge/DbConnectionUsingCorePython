@@ -6,7 +6,7 @@ mydb=mysql.connector.connect(host='localhost',
 
 )
 cur=mydb.cursor()
-query='select * from book1'
+query='select id from book1'
 cur.execute(query)
 list1=cur.fetchall()
 for i in list1:
